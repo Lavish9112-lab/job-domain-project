@@ -48,10 +48,10 @@ if st.button("Predict Job Category"):
         pred_idx = np.argmax(probs)
         pred_label = label_encoder.inverse_transform([pred_idx])[0]
 
-        st.markdown("### \ud83c\udfaf Predicted Category")
+        st.markdown("Predicted Category")
         st.success(pred_label)
 
-        st.markdown("### \ud83c\udf88 Confidence Scores")
+        st.markdown("Confidence Scores")
         prob_df = pd.DataFrame({
             "Job Domain": label_encoder.inverse_transform(np.arange(len(probs))),
             "Confidence": probs * 100
