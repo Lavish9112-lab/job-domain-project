@@ -29,7 +29,7 @@ with st.sidebar:
     st.success("Model Ready")
 
 # Main UI
-st.title("\ud83d\udcbc Job Category Predictor")
+st.title("Job Category Predictor")
 st.subheader("Predict job categories based on your skills")
 
 input_method = st.radio("Choose input method:", ["Text Area", "Comma Separated"], horizontal=True)
